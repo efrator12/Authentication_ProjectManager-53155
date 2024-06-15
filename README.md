@@ -101,7 +101,7 @@ ProjectManager - ECOMMERCE
 * `app.js`: Archivo principal de la aplicación.
 
 - `config`: Subdirectorio para archivos de configuración.
-* `mongoDB`.config.js: Configuración de MongoDB.
+* `mongoDB.config.js`: Configuración de MongoDB.
 * `passport.config.js`: Configuración de Passport.js.
 
 - `dao`: Subdirectorio para los objetos de acceso a datos.
