@@ -97,7 +97,7 @@ ProjectManager - ECOMMERCE
         └── jwt.js
 
 ```
-    - `src`: Subdirectorio principal para el código fuente del proyecto.
+`src`: Subdirectorio principal para el código fuente del proyecto.
 * `app.js`: Archivo principal de la aplicación.
 
 - `config`: Subdirectorio para archivos de configuración.
