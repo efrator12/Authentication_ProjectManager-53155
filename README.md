@@ -23,14 +23,6 @@ El archivo routes.js de cada proyecto contiene las funciones principales que pue
 ## Pasos para ejecutar el proyecto:
 - Para utilizar estas funciones de PRODUCTOS es necesario loggearse en sesion con el usuario correspondiente de la siguiente forma:
 * `http://localhost:8080/api/session/login`.
-
-EJEMPLO DE ACCESO COMO ADMINISTRADOR:
-```
-{
-  "email": "adminCoder@coder.com",
-  "password": "adminCod3r123"
-}
-```
 - Es necesario que al finalizar las actividades, se proceda a cerrar la sesion del usuario de la siguiente forma:
 * `http://localhost:8080/api/session/logout`.
 
