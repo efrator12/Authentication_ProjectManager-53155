@@ -64,50 +64,68 @@ ProjectManager - ECOMMERCE
 ├── .gitignore
 ├── package-lock.json
 ├── package.json
+│
 └── src
     ├── app.js
+    │
     ├── config
-    │   └── mongoDB.config.js
+    │   ├── mongoDB.config.js
+    │   └── passport.config.js
+    │
     ├── dao
-    │   ├── filesysManager
-    │   │   ├── CartManager.js
-    │   │   ├── ProductManager.js
-    │   │   └── data
-    │   │       ├── carts.json
-    │   │       └── products.json
     │   ├── models
     │   │   ├── cart.model.js
-    │   │   └── product.model.js
+    │   │   ├── product.model.js
+    │   │   └── user.model.js
+    │   │
     │   └── mongoDao
     │       ├── cart.dao.js
-    │       └── product.dao.js
-    └── routes
-        ├── carts.routes.js
-        ├── index.js
-        └── products.routes.js
+    │       ├── product.dao.js
+    │       └── user.dao.js
+    │
+    ├── middlewares
+    │   └── isLogin.middleware.js
+    │
+    ├── routes
+    │   ├── carts.routes.js
+    │   ├── index.js
+    │   ├── products.routes.js
+    │   └── session.routes.js
+    │
+    └── utils
+        ├── hasPassword.js
+        └── jwt.js
+
 ```
-  - `package.json` contiene la información sobre el proyecto, como el nombre, la versión, las dependencias requeridas, los scripts de ejecución y la licencia. Es fundamental para la gestión y el funcionamiento del proyecto en el ecosistema de Node.js.
-  - `src\app.js` es el punto de entrada principal de la aplicación. Aquí se configura y se inicia la aplicación Express, se definen middleware y se conectan las rutas.
+## :
+`src`: Subdirectorio principal para el código fuente del proyecto.
+`app.js`: Archivo principal de la aplicación.
 
-  - `src/dao/filesysManager` contiene la implementación del manejo de datos utilizando el sistema de archivos (no se utiliza en esta practica).
+`config`: Subdirectorio para archivos de configuración.
+`mongoDB`.config.js: Configuración de MongoDB.
+`passport.config.js`: Configuración de Passport.js.
 
-  - `src\routes\carts.routes.js` define las rutas relacionadas con los endpoints de la API para los carritos de compras, como crear un nuevo carrito, obtener información sobre los carritos existentes y añadir productos a los carritos.
-  - `src\routes\index.js` define las rutas principales de la API. Aquí se importan y se montan las rutas relacionadas con los productos y los carritos.
-  - `src\routes\products.routes.js` define las rutas relacionadas con los endpoints de la API para los productos, como obtener información sobre los productos existentes.
-  - `src\routes\session.routes.js`: contiene las definiciones de las rutas relacionadas con la gestión de sesiones de usuario en la aplicación. Incluye rutas para crear usuario, iniciar sesión, cerrar sesión.
-  
-  - `src/dao` contiene la lógica de acceso a datos. Está organizado para soportar diferentes métodos de almacenamiento, como el sistema de archivos y MongoDB.
-    
-  - `src/dao/models` contiene los modelos de datos para la aplicación, definidos utilizando Mongoose para MongoDB.
-  - `src/dao/models/cart.model.js` define el esquema del carrito de compra para MongoDB.
-  - `src/dao/models/product.model.js` define el esquema del producto para MongoDB.
-  - `src/dao/models/user.model.js`: define cómo se estructuran y comportan los datos de usuario en la base de datos o en la aplicación.
+`dao`: Subdirectorio para los objetos de acceso a datos.
 
-  - `src/dao/mongoDao` contiene la implementación del manejo de datos utilizando MongoDB.
-  - `src/dao/mongoDao/cart.dao.js` maneja la lógica relacionada con los carritos de compra utilizando MongoDB.
-  - `src/dao/mongoDao/product.dao.js` maneja la lógica relacionada con los productos utilizando MongoDB.
-  - `src\dao\mongoDao\user.dao.js`: contiene funciones y lógica para interactuar con la base de datos MongoDB para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) relacionadas con los usuarios.
+`models`: Subdirectorio para modelos de datos.
+`cart.model.js`: Modelo de carrito.
+`product.model.js`: Modelo de producto.
+`user.model.js`: Modelo de usuario.
 
-  - `src\middlewares\isLogin.middleware.js`: es un middleware utilizado en las rutas para verificar si un usuario está autenticado o ha iniciado sesión antes de permitir el acceso a ciertas partes de la aplicación.
+`mongoDao`: Subdirectorio para objetos de acceso a datos de MongoDB.
+`cart.dao.js`: DAO de carritos.
+`product.dao.js`: DAO de productos.
+`user.dao.js`: DAO de usuarios.
 
-  - `src/config/mongoDB.config.js` contiene la lógica para conectar a la base de datos y otras configuraciones relacionadas con MongoDB.
+`middlewares`: Subdirectorio para middleware.
+`isLogin.middleware.js`: Middleware para verificar inicio de sesión.
+
+`routes`: Subdirectorio para rutas de la aplicación.
+`carts.routes.js`: Rutas para carritos.
+`index.js: Archivo principal de rutas.
+`products.routes.js`: Rutas para productos.
+`session.routes.js`: Rutas para sesiones.
+
+`utils`: Subdirectorio para utilidades.
+`hasPassword.js`: Utilidad para manejar contraseñas.
+`jwt.js`: Utilidad para manejar JWT (JSON Web Tokens).
