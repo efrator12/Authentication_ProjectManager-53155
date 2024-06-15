@@ -99,7 +99,7 @@ ProjectManager - ECOMMERCE
 ```
 ## :
 `src`: Subdirectorio principal para el código fuente del proyecto.
-`app.js`: Archivo principal de la aplicación.
+* `app.js`: Archivo principal de la aplicación.
 
 `config`: Subdirectorio para archivos de configuración.
 `mongoDB`.config.js: Configuración de MongoDB.
