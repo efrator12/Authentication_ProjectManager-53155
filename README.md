@@ -98,33 +98,33 @@ ProjectManager - ECOMMERCE
 
 ```
 ## :
-`src`: Subdirectorio principal para el código fuente del proyecto.
+- `src`: Subdirectorio principal para el código fuente del proyecto.
 * `app.js`: Archivo principal de la aplicación.
 
-`config`: Subdirectorio para archivos de configuración.
+- `config`: Subdirectorio para archivos de configuración.
 * `mongoDB`.config.js: Configuración de MongoDB.
 * `passport.config.js`: Configuración de Passport.js.
 
-`dao`: Subdirectorio para los objetos de acceso a datos.
-`models`: Subdirectorio para modelos de datos.
+- `dao`: Subdirectorio para los objetos de acceso a datos.
+- `models`: Subdirectorio para modelos de datos.
 * `cart.model.js`: Modelo de carrito.
 * `product.model.js`: Modelo de producto.
 * `user.model.js`: Modelo de usuario.
 
-`mongoDao`: Subdirectorio para objetos de acceso a datos de MongoDB.
+- `mongoDao`: Subdirectorio para objetos de acceso a datos de MongoDB.
 * `cart.dao.js`: DAO de carritos.
 * `product.dao.js`: DAO de productos.
 * `user.dao.js`: DAO de usuarios.
 
-`middlewares`: Subdirectorio para middleware.
+- `middlewares`: Subdirectorio para middleware.
 * `isLogin.middleware.js`: Middleware para verificar inicio de sesión.
 
-`routes`: Subdirectorio para rutas de la aplicación.
+- `routes`: Subdirectorio para rutas de la aplicación.
 * `carts.routes.js`: Rutas para carritos.
 * `index.js: Archivo principal de rutas.
 * `products.routes.js`: Rutas para productos.
 * `session.routes.js`: Rutas para sesiones.
 
-`utils`: Subdirectorio para utilidades.
+- `utils`: Subdirectorio para utilidades.
 * `hasPassword.js`: Utilidad para manejar contraseñas.
 * `jwt.js`: Utilidad para manejar JWT (JSON Web Tokens).
