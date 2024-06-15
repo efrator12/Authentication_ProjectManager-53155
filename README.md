@@ -26,6 +26,8 @@ El archivo routes.js de cada proyecto contiene las funciones principales que pue
 - Es necesario que al finalizar las actividades, se proceda a cerrar la sesion del usuario de la siguiente forma:
 * `http://localhost:8080/api/session/logout`.
 
+* Para loggearse a traves de la API de Google Authentication seria por medio de la siguiente liga: `http://localhost:8080/api/session/loginGoogle`. Si ya tienes una cuenta de Google se creara un usuario nuevo dentro de la Mongo DB sin tener una contraseña.
+
 1. Clona este repositorio en tu máquina local (node.js instalado).
 2. Navega hasta el directorio `ProductManager - ECOMMERCE`.
 3. Ejecuta los siguientes comandos desde un CMD para compilar el proyecto:
