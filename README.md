@@ -120,7 +120,7 @@ ProjectManager - ECOMMERCE
 
 - `routes`: Subdirectorio para rutas de la aplicación.
 * `carts.routes.js`: Rutas para carritos.
-* `index.js: Archivo principal de rutas.
+* `index.js`: Archivo principal de rutas.
 * `products.routes.js`: Rutas para productos.
 * `session.routes.js`: Rutas para sesiones.
 
